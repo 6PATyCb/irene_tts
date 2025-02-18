@@ -50,7 +50,7 @@ class CustomTTSEntity(TextToSpeechEntity):
     def device_info(self):
         return {
             "identifiers": {(DOMAIN, self._attr_unique_id)},
-            "model": "IreneTTS_inner_odel",
+            "model": "IreneTTS_inner_model",
             "manufacturer": "IreneTTS"
         }
 
