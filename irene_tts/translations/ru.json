@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Добавление text-to-speech движка",
+        "description": "Укажите данные конфигурации. Доп. информацию см. в документации.",
+        "data": {
+          "url": "IreneVA_Willow_plugin-совместимая ссылка с указанием порта."
+        }
+      }
+    },
+    "error": {
+      "already_configured": "Такая ссылка уже настроена"
+    },
+    "abort": {
+      "already_configured": "Такая ссылка уже настроена"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "domain": "irene_tts",
+  "name": "Irene TTS",
+  "codeowners": [
+    "@6PATyCb"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/6PATyCb/irene_tts",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/6PATyCb/irene_tts/issues",
+  "requirements": [
+    "requests>=2.25.1"
+  ],
+  "version": "0.4.1"
+}

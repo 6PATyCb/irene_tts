@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Добавление text-to-speech движка",
+        "description": "Provide configuration data. See documentation for further info.",
+        "data": {
+          "url": "IreneVA_Willow_plugin-compatible endpoint with a port number."
+        }
+      }
+    },
+    "error": {
+      "already_configured": "This endpoint are already configured."
+    },
+    "abort": {
+      "already_configured": "This endpoint are already configured."
+    }
+  }
+}
