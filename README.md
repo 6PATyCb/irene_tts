@@ -1,5 +1,5 @@
 # irene_tts
-Плагин для HA позволяющий использовать [Ирины](https://github.com/janvarev/Irene-Voice-Assistant) в качестве TTS (синтеза речи из текста). 
+Плагин для `Home Assistant`, позволяющий использовать [Ирины](https://github.com/janvarev/Irene-Voice-Assistant) в качестве TTS (синтеза речи из текста). 
 
 Для работы требуется [Ирина](https://github.com/janvarev/Irene-Voice-Assistant) запущенная в режиме `runva_webapi.py` и мой плагин [IreneVA_Willow_plugin](https://github.com/6PATyCb/IreneVA_Willow_plugin) версии не ниже 2.1, т.к. его эндпоинт `/api/tts` используется для преобразования текста в голос.
 
