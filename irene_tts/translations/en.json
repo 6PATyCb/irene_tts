@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Добавление text-to-speech движка",
+        "title": "Add text-to-speech engine",
         "description": "Provide configuration data. See documentation for further info.",
         "data": {
           "url": "IreneVA_Willow_plugin-compatible endpoint with a port number."
