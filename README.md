@@ -1,9 +1,12 @@
 # irene_tts
 Плагин для `Home Assistant`, позволяющий использовать [Ирину](https://github.com/janvarev/Irene-Voice-Assistant) в качестве TTS (синтеза речи из текста). 
 
-Для работы требуется [Ирина](https://github.com/janvarev/Irene-Voice-Assistant) запущенная в режиме `runva_webapi.py` и мой плагин [IreneVA_Willow_plugin](https://github.com/6PATyCb/IreneVA_Willow_plugin) версии не ниже 2.1, т.к. его эндпоинт `/api/tts` используется для преобразования текста в голос (Willow устройство не требуется).
+## Что мне это даст?
+Данный плагин позволит в `Home Assistant` озвучивать ответы в режиме `assist` и если его использовать совместно со вторым моим плагином [irene_stt](https://github.com/6PATyCb/irene_stt), то можно получить локальное управление голосом в HA (через браузер, мобильное приложение, ESP32 микрофон типа Atom-echo) на русском языке, а также получать голосовые ответы на вопросы о состоянии датчиков.
 
 ## Как установить плагин
+
+Для работы требуется [Ирина](https://github.com/janvarev/Irene-Voice-Assistant) запущенная в режиме `runva_webapi.py` и мой плагин [IreneVA_Willow_plugin](https://github.com/6PATyCb/IreneVA_Willow_plugin) версии не ниже 2.1, т.к. его эндпоинт `/api/tts` используется для преобразования текста в голос (Willow устройство не требуется).
 
 Установка происходит так же, как это делается с любым сторонним плагином, т.е. через копирование папки `irene_tts` со всем его содержимым в каталог `custom_components` в HA. 
 
