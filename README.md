@@ -1,5 +1,8 @@
-# irene_tts
+# Irene TTS
 Плагин для `Home Assistant`, позволяющий использовать [Ирину](https://github.com/janvarev/Irene-Voice-Assistant) в качестве TTS (синтеза речи из текста). 
+
+[![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=irene_tts)
+[![Add Repository](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=6PATyCb&repository=irene_tts&category=integration)
 
 ## Что мне это даст?
 Данный плагин позволит в `Home Assistant` озвучивать ответы в режиме `assist` и если его использовать совместно со вторым моим плагином [irene_stt](https://github.com/6PATyCb/irene_stt), то можно получить локальное управление голосом в HA (через браузер, мобильное приложение, ESP32 микрофон типа Atom-echo) на русском языке, а также получать голосовые ответы на вопросы о состоянии датчиков.
@@ -8,9 +11,27 @@
 
 Для работы требуется [Ирина](https://github.com/janvarev/Irene-Voice-Assistant) запущенная в режиме `runva_webapi.py` и мой плагин [IreneVA_Willow_plugin](https://github.com/6PATyCb/IreneVA_Willow_plugin) версии не ниже 2.1, т.к. его эндпоинт `/api/tts` используется для преобразования текста в голос (Willow устройство не требуется).
 
-Установка происходит так же, как это делается с любым сторонним плагином, т.е. через копирование папки `irene_tts` со всем его содержимым в каталог `custom_components` в HA. 
 
-После копирования папки, выполните полную перезагрузку `Home Assistant`. Далее перейдите в раздел `Настройки` -> `Устройства и службы`, нажмите кнопку `Добавить интеграцию` и в поиске введите `Irene TTS`. Далее укажите ссылку до запущенной Ирины, у меня она выглядит так:
+### Установка чере HACS (Рекомендуется)
+
+1. Удостоверьтесь что [HACS](https://hacs.xyz/) установлен
+2. Добавьте этот репозиторий как Пользовательская интеграция в HACS:
+   - Перейдите в HACS
+   - Нажмите на три точки в правом верхнем углу экрана
+   - Выберите "Пользовательские репозитории"
+   - Вставьте ссылку https://github.com/6PATyCb/irene_tts в поле `Репозиторий`
+   - Вытерите "Интеграция" в поле `Тип`
+3. Нажмите "Скачать" на интеграции Irene TTS
+4. Перезапустите Home Assistant
+
+### Ручная установка
+
+1. Скопируйте `custom_components/irene_tts` директорию в ваш Home Assistant `custom_components` директорию
+2. Перезапустите Home Assistant
+
+### Настройка
+
+Перейдите в раздел `Настройки` -> `Устройства и службы`, нажмите кнопку `Добавить интеграцию` и в поиске введите `Irene TTS`. Далее укажите ссылку до запущенной Ирины, у меня она выглядит так:
 ```
 https://192.168.133.252:5003
 ```
